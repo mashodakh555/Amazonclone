@@ -1,0 +1,67 @@
+/* Grid and container styling */
+
+.color-gray-400 {
+  color: #718096;
+}
+
+.products-carousel-container {
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "titleFont";
+  place-items: center;
+  gap: 4;
+}
+
+.products-carousel-card {
+  width: 97%;
+  height: 250px;
+  background-color: #fff;
+  padding: 0 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section */
+.products-header {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.products-title {
+  letter-spacing: 0.05em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.products-see-more {
+  font-size: 0.875rem;
+  color: #0072ff;
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  transition: color 0.3s; /* Hover effect for color change */
+}
+
+.products-see-more:hover {
+  color: #e50914;
+  text-decoration: underline;
+}
+
+.products-slide-img {
+  margin-left: 15px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

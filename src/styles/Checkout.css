@@ -1,0 +1,456 @@
+.checkout {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  height: 100px;
+  background: linear-gradient(to top, #87ceeb 0%, transparent 100%);
+  border-radius: 0.125rem; /* You can adjust the rounded value as needed */
+  margin-top: 1.25rem; /* You can adjust the margin value as needed */
+  margin-bottom: 15px;
+}
+
+.checkout-logo {
+  width: 150px;
+}
+
+@media (min-width: 1024px) {
+  .checkout-container {
+    display: flex;
+  }
+  .checkout-container > * {
+    margin-right: 1rem;
+  }
+}
+
+.checkout-items-text {
+  font-size: 1.5rem;
+  font-family: "RubikFont", sans-serif;
+  font-weight: 600;
+}
+
+.checkout-address-container {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.125rem;
+}
+
+@media (min-width: 1024px) {
+  .checkout-address-container {
+    width: 100%;
+  }
+}
+
+.checkout-shipping-address-method {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.checkout-second-container {
+  border: 1px solid #ccc; /* Equivalent to border border-gray-500 */
+  padding: 1.25rem; /* Equivalent to p-5 in Tailwind CSS */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Equivalent to gap-2 in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind CSS */
+}
+
+.checkout-shipping-address {
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  font-size: 1.125rem; /* Equivalent to text-lg in Tailwind CSS */
+}
+
+.checkout-empty-element {
+  height: 1px; /* Equivalent to h-[1px] in Tailwind CSS */
+  width: 80%; /* Equivalent to w-[80%] in Tailwind CSS */
+  background-color: #4b5563; /* Equivalent to bg-gray-600 in Tailwind CSS */
+}
+
+.checkout-label {
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  margin-bottom: 5px;
+}
+
+.checkout-error-container {
+  color: #dc2626; /* Equivalent to text-red-600 in Tailwind CSS */
+  font-size: 0.75rem; /* Equivalent to text-xs in Tailwind CSS */
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+  letter-spacing: 0.05em; /* Equivalent to tracking-wide in Tailwind CSS */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Equivalent to gap-2 in Tailwind CSS */
+  margin-top: 2.5px;
+}
+
+.checkout-error-text {
+  font-style: italic; /* Equivalent to italic in Tailwind CSS */
+  font-family: "TitleFont", sans-serif; /* Assuming "TitleFont" is the font name */
+  font-weight: 800; /* Equivalent to font-extrabold in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+}
+
+.checkout-username-input {
+  width: 100%; /* Equivalent to w-[100%] in Tailwind CSS */
+}
+
+@media (min-width: 768px) {
+  .checkout-username-input {
+    width: 70%; /* Equivalent to md:w-[70%] in Tailwind CSS */
+  }
+}
+
+.checkout-username-input {
+  padding-top: 0.25rem; /* Equivalent to py-1 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  padding-left: 0.5rem; /* Equivalent to px-2 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-username-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-phone-input {
+  width: 100%; /* Equivalent to w-[100%] in Tailwind CSS */
+}
+
+@media (min-width: 768px) {
+  .checkout-phone-input {
+    width: 70%; /* Equivalent to md:w-[70%] in Tailwind CSS */
+  }
+}
+
+.checkout-phone-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-phone-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-phone-helper-text {
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+
+.checkout-address-input {
+  width: 100%; /* Equivalent to w-[100%] in Tailwind CSS */
+}
+
+@media (min-width: 768px) {
+  .checkout-address-input {
+    width: 70%; /* Equivalent to md:w-[70%] in Tailwind CSS */
+  }
+}
+
+.checkout-address-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-address-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-address-details-input {
+  width: 100%; /* Equivalent to w-[100%] in Tailwind CSS */
+}
+
+@media (min-width: 768px) {
+  .checkout-address-details-input {
+    width: 70%; /* Equivalent to md:w-[70%] in Tailwind CSS */
+  }
+}
+
+.checkout-address-details-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+  margin-top: 0.3rem; /* Equivalent to mt-1 in Tailwind CSS */
+}
+
+.checkout-address-details-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-city-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.checkout-city-input-container {
+  width: 100%; /* Equivalent to w-[100%] in Tailwind CSS */
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .checkout-city-input-container {
+    width: 40%; /* Equivalent to md:w-[40%] in Tailwind CSS */
+  }
+}
+
+.checkout-city-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-city-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+  width: 100%; /* Equivalent to w-full in Tailwind CSS */
+}
+
+.checkout-state-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkout-state-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-state-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-state-input-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-zip-container {
+  margin-left: 10px;
+}
+
+.checkout-zip-input {
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+  width: 80%;
+}
+
+.checkout-zip-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-address-btn {
+  text-wrap: nowrap;
+  width: 40%;
+}
+
+.checkout-address-btn {
+  padding: 0.375rem 0.5rem; /* Equivalent to py-1.5 and text-sm in Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  background: linear-gradient(
+    to top,
+    #f7dfa5,
+    #f0c14b
+  ); /* Equivalent to bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  transition: background 0.3s, border 0.3s; /* Equivalent to hover:bg-gradient-to-t and active:border-yellow-800 in Tailwind CSS */
+}
+
+.checkout-address-btn:hover {
+  background: linear-gradient(to top, #f0c14b, #f7dfa5);
+}
+
+.checkout-address-btn:active {
+  border-color: #d97700; /* Equivalent to active:border-yellow-800 in Tailwind CSS */
+}
+
+.checkout-saved-btn {
+  color: #10b981; /* Equivalent to text-green-800 in Tailwind CSS */
+  font-size: 1.125rem; /* Equivalent to text-md in Tailwind CSS */
+  font-weight: 600; /* Equivalent to font-semibold in Tailwind CSS */
+}
+
+.checkout-payment-method-text {
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  font-size: 1.125rem; /* Equivalent to text-md in Tailwind CSS */
+}
+
+.checkout-payment-method-container {
+  border: 1px solid #718096; /* Equivalent to border border-gray-500 in Tailwind CSS */
+  padding: 1.25rem; /* Equivalent to p-5 in Tailwind CSS */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Equivalent to gap-2 in Tailwind CSS */
+  border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind CSS */
+}
+
+.checkout-payment-method-empty-container {
+  height: 0.5px; /* Equivalent to h-[0.5px] in Tailwind CSS */
+  width: 80%; /* Equivalent to w-[80%] in Tailwind CSS */
+  background-color: #4b5563; /* Equivalent to bg-gray-600 in Tailwind CSS */
+}
+
+.checkout-card-name-text {
+  font-weight: 700; /* Equivalent to font-bold in Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+  margin-bottom: 5px;
+}
+
+.checkout-card-name-input {
+  width: 70%; /* Equivalent to w-[70%] in Tailwind CSS */
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-card-name-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-card-number-input {
+  width: 45%; /* Equivalent to w-[45%] in Tailwind CSS */
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-card-number-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-exp-date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1280px) {
+  .checkout-exp-date-container {
+    flex-direction: row;
+  }
+}
+
+.checkout-exp-date {
+  width: 70%; /* Equivalent to w-[70%] in Tailwind CSS */
+}
+
+@media (min-width: 1280px) {
+  .checkout-exp-date {
+    width: 50%; /* Equivalent to xl:w-[50%] in Tailwind CSS */
+  }
+}
+
+.checkout-exp-date-input {
+  width: 30%; /* Equivalent to w-[30%] in Tailwind CSS */
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-exp-date-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-security-code-container {
+  width: 70%; /* Equivalent to w-[70%] in Tailwind CSS */
+}
+
+@media (min-width: 1280px) {
+  .checkout-security-code-container {
+    width: 50%; /* Equivalent to xl:w-[50%] in Tailwind CSS */
+  }
+}
+
+.checkout-security-code-input {
+  width: 30%; /* Equivalent to w-[30%] in Tailwind CSS */
+  padding: 0.25rem 0.5rem; /* Equivalent to py-1 and px-2 in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  font-size: 1rem; /* Equivalent to text-base in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  outline: none; /* Equivalent to outline-none in Tailwind CSS */
+}
+
+.checkout-security-code-input:focus {
+  border-color: #9ca3af; /* Equivalent to focus-within:border-gray-400 in Tailwind CSS */
+  box-shadow: 0 0 0 2px rgba(156, 163, 175, 0.5); /* Equivalent to focus-within:shadow-md in Tailwind CSS */
+  transition: box-shadow 0.1s; /* Equivalent to duration-100 in Tailwind CSS */
+}
+
+.checkout-proceed-btn {
+  width: 30%; /* Equivalent to w-[30%] in Tailwind CSS */
+  padding: 0.375rem 0; /* Equivalent to py-1.5 in Tailwind CSS */
+  font-size: 0.875rem; /* Equivalent to text-sm in Tailwind CSS */
+  border-radius: 0.125rem; /* Equivalent to rounded-sm in Tailwind CSS */
+  background: linear-gradient(
+    to top,
+    #f7dfa5,
+    #f0c14b
+  ); /* Equivalent to bg-gradient-to-t from-[#f7dfa5] to-[#f0c14b] in Tailwind CSS */
+  border: 1px solid #d1d5db; /* Equivalent to border border-zinc-400 in Tailwind CSS */
+  transition: background 0.3s, border 0.3s; /* Equivalent to hover:bg-gradient-to-t and active:border-yellow-800 in Tailwind CSS */
+}
+
+.checkout-proceed-btn:hover {
+  background: linear-gradient(to top, #f0c14b, #f7dfa5);
+}
+
+.checkout-proceed-btn:active {
+  border-color: #d97700; /* Equivalent to active:border-yellow-800 in Tailwind CSS */
+}

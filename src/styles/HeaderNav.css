@@ -1,0 +1,98 @@
+.Header_NavMain {
+  background-color: rgb(35, 47, 62);
+  font-family: "Amazon Ember", sans-serif;
+  display: flex;
+  top: 0;
+  align-items: center;
+  z-index: 100;
+  /* flex-direction: column; */
+  /* height: 40px; */
+}
+
+@media (max-width: 1800px) {
+  .Header_NavMain {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1801px) {
+  .Header_NavMain {
+    flex-direction: row;
+    height: 40px;
+  }
+}
+
+.Header_NavMainOpt {
+  color: white;
+  display: flex;
+  top: 0;
+  align-items: center;
+  z-index: 100;
+  margin-left: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.Header_NavMain {
+  color: white;
+  padding: 3px;
+}
+
+.Header_NavMainOpt svg {
+  margin-right: 10px;
+}
+
+.ListItemButton {
+  border-radius: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.ListItemButton:hover {
+  background-color: #555;
+}
+
+.ListItemButton a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.listitemtext {
+  font-size: 5px;
+}
+a a:hover {
+  text-decoration: none;
+  color: white;
+}
+* {
+  text-decoration: none;
+}
+.sb-button {
+  background-color: rgb(35, 47, 62);
+  border: 0;
+  color: white;
+}
+.sb-link-1 {
+  margin-left: 3%;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.sb-signin {
+  background-color: rgb(35, 47, 62);
+  padding: 20px;
+}
+.sb-link-2 {
+  margin-left: 10%;
+  display: block;
+}
+.sb-menu-link {
+  margin-top: 10%;
+}
+.sb-menu-titles {
+  color: black;
+  margin-left: 2.3%;
+}

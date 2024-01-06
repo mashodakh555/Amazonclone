@@ -1,0 +1,142 @@
+.registration-container {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration-form {
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 250px;
+}
+
+form {
+  max-width: 370px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: medium;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.password-requirement {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.registration-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to top, #f7dfa5, #f0c14b);
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background: linear-gradient(to top, #f0c14b, #e77600);
+  border: 1px solid #777;
+}
+
+.success-message {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.registration-sign-in-link {
+  text-decoration: none;
+  color: #0073e6;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.registration-sign-in-link:hover {
+  text-decoration: underline;
+  color: #dc143c;
+}
+
+.separator {
+  width: 70%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 15px;
+}
+
+.footer {
+  background: linear-gradient(to top, #fff, #f2f2f2, #e1e1e1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #0073e6;
+}
+
+.footer p:hover {
+  text-decoration: underline;
+  color: #dc143c;
+}
+/* Copyright Notice */
+.copy-right {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+.registration-form-container {
+  margin-right: 20px;
+}
+.registration-sign-in-container {
+  margin-top: 10px;
+}
+.registration-already-have-an-account {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
